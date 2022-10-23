@@ -1,5 +1,5 @@
+/*
 //exercicio1
-
 function cubicSquare () {
     let resultado = ''
     for (let i=1 ; i<=10 ; i++) {
@@ -11,6 +11,7 @@ return resultado
 }
 console.log("exercicio1")
 console.log(cubicSquare())
+*/
 
 /*
 //exercicio2
@@ -31,20 +32,28 @@ console.log(divisiblesFor(20 , 2))//verificar o undefined no final
 
 /*
 //exercício3
-//1. String, a palavra a ser utilizada
-//2. Number, a posição a ser procurada
+function stringElement(string, n){
+    
+    //começar do index 0 e percorrer até o últimp 
+    for (let i = 0 ; i <= string.length-1 ; i++ ) {
+        if (n == i){
+            console.log(`Retorna ${string[i].toUpperCase()} pois essa é a letra da posição ${n}`)
 
-function stringElement(x, y){
-    let q = []
-    for (let i = 1 ; i < x.length ; i++ ) {
-        console.log(i)
-        if (i % y == 0) {
-            q.push( i / y) 
         }
 
+
     }
-    return q.join('/')
+
 }
-console.log("exercicio3")
-console.log (stringElement("iury", 3 ))
+console.log("exerciocio 3")
+console.log(stringElement("iury", 0))//verificar o undefined
 */
+
+
+
+
+
+
+
+
+
