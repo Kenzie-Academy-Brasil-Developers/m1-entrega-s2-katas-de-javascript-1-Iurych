@@ -1,4 +1,4 @@
-/*
+
 //exercicio1
 function cubicSquare () {
     let resultado = ''
@@ -121,7 +121,7 @@ function countTextOccurrences(string, letra){
 }
 console.log("exercicio 7")
 let resultado7 = countTextOccurrences("AbacAxi", "a")
-console.log(resultado7)
+console.log(`Retorna ${resultado7} , pois a letra "A" apareceu ${resultado7} vezes.`)
 
 
 //exercicio8
@@ -136,7 +136,7 @@ return inverso
 console.log("exercicio 8")
 let resultado8 = textBackwards("abacaxi")
 console.log(`Retorna ${resultado8}, pois é o contrário de abacaxi.`) 
-*/
+
 
 //exercicio9
 
@@ -156,3 +156,39 @@ let resultado9 = removeBlank("Não ficarão   espaços em branco")
 console.log(resultado9)
 
 
+//exercicio10
+
+function encryptText(string){
+    let encripto = ''
+
+    for(let i = 0; i<string.length; i++){
+        if (string[i] == "A"){
+            encripto += "X"
+        }else if(string[i] == "a"){
+            encripto += "x"
+        }else if(string[i] == "E"){
+            encripto += "Y"
+        }else if(string[i] == "e"){        
+            encripto += "y"        
+        }else if (string[i] == "I"){
+            encripto += "W"
+        }else if(string[i] == "i"){
+            encripto += "w"
+        }else if(string[i] == "O"){
+            encripto += "K"
+        }else if(string[i] == "o"){
+            encripto += "k"
+        }else if(string[i] == "U"){
+            encripto += "Z"
+        }else if(string[i] == "u"){
+            encripto += "z"
+        }else{encripto += string[i]}         
+    
+    }    
+     
+    return encripto  
+    
+}
+console.log("exercicio 10")
+let resultado10 = encryptText("Uma frase ultra secreta que precisa ser criptografada")
+console.log(`Retorna ${resultado10}`)
