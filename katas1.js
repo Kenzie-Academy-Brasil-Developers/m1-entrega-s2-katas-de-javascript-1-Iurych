@@ -104,7 +104,7 @@ function countVowels(string){
 console.log("exercicio 6")
 let resultado6 = countVowels("abacaxi")
 console.log(`Retorna ${resultado6}, pois existem ${resultado6} vogais na palavra abacaxi`)
-*/
+
 
 //exercicio7
 function countTextOccurrences(string, letra){
@@ -122,3 +122,17 @@ function countTextOccurrences(string, letra){
 console.log("exercicio 7")
 let resultado7 = countTextOccurrences("AbacAxi", "a")
 console.log(resultado7)
+*/
+
+//exercicio8
+function textBackwards(string) {
+    let inverso = ''
+    for (let i = string.length-1 ; i >= 0 ; i--) {
+        inverso += `${string[i]}`
+       
+    }
+return inverso
+}
+console.log("exercicio 8")
+let resultado8 = textBackwards("abacaxi")
+console.log(`Retorna ${resultado8}, pois é o contrário de abacaxi.`) 
