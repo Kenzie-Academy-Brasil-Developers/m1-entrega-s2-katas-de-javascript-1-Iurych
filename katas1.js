@@ -48,9 +48,9 @@ function stringElement(string, n){
 }
 console.log("exerciocio 3")
 let resultado = stringElement("iury", 0)
-console.log(resultado)
+console.log(`Retorna ${resultado} pois esta é a letra da posição 7.`)
 //console.log(stringElement("iury", 3))//verificar o undefined
-*/
+
 
 //exercicio4
 function stringSlicer(string, n) {
@@ -68,6 +68,19 @@ let resultado4 = stringSlicer("almoxarifado", 4)
 console.log(`Retorna ${resultado4.toUpperCase()} pois são os 4 primeiros caracteres da string.`)
 
 
+//exercicio5
+function  stringRest(string, n) { 
+    for (let i = 0; i<= string.length; i++) {
+        if (n) {
+            return string.slice(2, string.length) 
+
+        }
+    }
+}
+console.log("exercicio 5")
+let resultado5 = stringRest("ALGORÍTIMO", 2)
+console.log(`Retorna ${resultado5} pois são os caracteres à partir da posição 2`)
+*/
 
 
 
