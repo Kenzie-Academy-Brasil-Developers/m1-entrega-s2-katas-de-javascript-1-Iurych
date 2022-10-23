@@ -10,7 +10,7 @@ function cubicSquare () {
 return resultado
 }
 console.log("exercicio 1")
-console.log(cubicSquare())
+console.log("retorna", cubicSquare())
 
 
 
@@ -27,7 +27,7 @@ function divisiblesFor(x, y){
 
 }
 console.log("exercicio 2")
-console.log(divisiblesFor(20 , 2))//verificar o undefined no final
+console.log("Retorna", divisiblesFor(20 , 2))//verificar o undefined no final
 
 
 
@@ -80,8 +80,28 @@ function  stringRest(string, n) {
 console.log("exercicio 5")
 let resultado5 = stringRest("ALGORÍTIMO", 2)
 console.log(`Retorna ${resultado5} pois são os caracteres à partir da posição 2`)
+
+
+//exercicio6
+function countVowels(string){
+    let vogais = 0
+    for(let i = 0; i < string.length; i++){
+        
+        if(string[i] == "a"){
+            vogais++
+        }else if(string[i] == "e"){
+            vogais++
+        }else if(string[i] == "i"){
+            vogais++
+        }else if(string[i] == "o"){
+            vogais++
+        }else if(string[i] == "u"){
+            vogais++
+        }
+    }   
+    return vogais
+}
+console.log("exercicio 6")
+let resultado6 = countVowels("abacaxi")
+console.log(`Retorna ${resultado6}, pois existem ${resultado6} vogais na palavra abacaxi`)
 */
-
-
-
-
