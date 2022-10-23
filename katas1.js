@@ -105,3 +105,20 @@ console.log("exercicio 6")
 let resultado6 = countVowels("abacaxi")
 console.log(`Retorna ${resultado6}, pois existem ${resultado6} vogais na palavra abacaxi`)
 */
+
+//exercicio7
+function countTextOccurrences(string, letra){
+    let count = 0
+    for(let i = 0; i < string.length; i++) {
+        if(string[i] == letra){
+            count++
+        }else if(string[i] == letra.toUpperCase()){
+            count++
+        }
+
+    }
+    return count
+}
+console.log("exercicio 7")
+let resultado7 = countTextOccurrences("AbacAxi", "a")
+console.log(resultado7)
