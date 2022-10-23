@@ -122,7 +122,7 @@ function countTextOccurrences(string, letra){
 console.log("exercicio 7")
 let resultado7 = countTextOccurrences("AbacAxi", "a")
 console.log(resultado7)
-*/
+
 
 //exercicio8
 function textBackwards(string) {
@@ -136,3 +136,23 @@ return inverso
 console.log("exercicio 8")
 let resultado8 = textBackwards("abacaxi")
 console.log(`Retorna ${resultado8}, pois é o contrário de abacaxi.`) 
+*/
+
+//exercicio9
+
+function removeBlank(string){
+    let NewString = ''
+    for(let i = 0; i < string.length; i++){
+        if(string[i] !== " "){
+            NewString += string[i]
+          
+        }
+    }
+  
+return NewString
+}
+console.log("exercicio 9")
+let resultado9 = removeBlank("Não ficarão   espaços em branco")
+console.log(resultado9)
+
+
