@@ -37,19 +37,19 @@ function stringElement(string, n){
     //começar do index 0 e percorrer até o últimp 
     for (let i = 0 ; i <= string.length ; i++ ) {
         if (i == n){
+            
             return string[i].toUpperCase()
-            console.log(`Retorna ${string[i].toUpperCase()} pois essa é a letra da posição ${n}`)
-
+            
+            
         }
 
-
+        
     }
-
+    
 }
 console.log("exerciocio 3")
-let resultado = stringElement("iury", 0)
-console.log(`Retorna ${resultado} pois esta é a letra da posição 7.`)
-//console.log(stringElement("iury", 3))//verificar o undefined
+console.log(stringElement("algoritmo", 7))
+
 
 
 //exercicio4
@@ -57,15 +57,15 @@ function stringSlicer(string, n) {
     for(let i = 0 ; i <= string.length ; i++) {
          
         if (n) {
-            return string.slice(0, n) // porque se coloco console.log da undefined?
+            
+            return string.slice(0, n).toUpperCase()
 
         }
      }
 
 }
 console.log("exercicio 4")
-let resultado4 = stringSlicer("almoxarifado", 4)
-console.log(`Retorna ${resultado4.toUpperCase()} pois são os 4 primeiros caracteres da string.`)
+console.log(stringSlicer("almoxarifado", 4))
 
 
 //exercicio5
@@ -78,8 +78,7 @@ function  stringRest(string, n) {
     }
 }
 console.log("exercicio 5")
-let resultado5 = stringRest("ALGORÍTIMO", 2)
-console.log(`Retorna ${resultado5} pois são os caracteres à partir da posição 2`)
+console.log(stringRest("ALGORÍTIMO", 2))
 
 
 //exercicio6
@@ -99,11 +98,10 @@ function countVowels(string){
             vogais++
         }
     }   
-    return vogais
+    return `Retorna ${vogais}, pois existem ${vogais} vogais na palavra abacaxi`
 }
 console.log("exercicio 6")
-let resultado6 = countVowels("abacaxi")
-console.log(`Retorna ${resultado6}, pois existem ${resultado6} vogais na palavra abacaxi`)
+console.log(countVowels("abacaxi"))
 
 
 //exercicio7
@@ -117,11 +115,11 @@ function countTextOccurrences(string, letra){
         }
 
     }
-    return count
+    return `Retorna ${count} , pois a letra "${letra}" apareceu ${count} vezes.`
 }
 console.log("exercicio 7")
-let resultado7 = countTextOccurrences("AbacAxi", "a")
-console.log(`Retorna ${resultado7} , pois a letra "A" apareceu ${resultado7} vezes.`)
+console.log(countTextOccurrences("Abacaxi", "a"))
+
 
 
 //exercicio8
@@ -131,11 +129,10 @@ function textBackwards(string) {
         inverso += `${string[i]}`
        
     }
-return inverso
+return `Retorna ${inverso}, pois é o contrário de abacaxi.`
 }
 console.log("exercicio 8")
-let resultado8 = textBackwards("abacaxi")
-console.log(`Retorna ${resultado8}, pois é o contrário de abacaxi.`) 
+console.log(textBackwards("abacaxi")) 
 
 
 //exercicio9
@@ -147,13 +144,11 @@ function removeBlank(string){
             NewString += string[i]
           
         }
-    }
-  
-return NewString
+    }  
+    return NewString
 }
 console.log("exercicio 9")
-let resultado9 = removeBlank("Não ficarão   espaços em branco")
-console.log(resultado9)
+console.log(removeBlank("Não ficarão   espaços em branco"))
 
 
 //exercicio10
@@ -184,11 +179,8 @@ function encryptText(string){
             encripto += "z"
         }else{encripto += string[i]}         
     
-    }    
-     
-    return encripto  
+    }return encripto  
     
 }
 console.log("exercicio 10")
-let resultado10 = encryptText("Uma frase ultra secreta que precisa ser criptografada")
-console.log(`Retorna ${resultado10}`)
+console.log(encryptText("Uma frase ultra secreta que precisa ser criptografada"))
