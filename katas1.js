@@ -72,7 +72,7 @@ console.log(stringSlicer("almoxarifado", 4))
 function  stringRest(string, n) { 
     for (let i = 0; i<= string.length; i++) {
         if (n) {
-            return string.slice(2, string.length) 
+            return string.slice(n, string.length) 
 
         }
     }
