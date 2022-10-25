@@ -65,10 +65,8 @@ console.log(stringSlicer("almoxarifado", 4))
 
 //exercicio5
 function  stringRest(string, n) { 
-    for (let i = 0; i<= string.length; i++) {
-        
-            return string.slice(n, string.length) 
-
+    for (let i = 0; i<= string.length; i++) {        
+        return string.slice(n, string.length) 
     
     }
 }
