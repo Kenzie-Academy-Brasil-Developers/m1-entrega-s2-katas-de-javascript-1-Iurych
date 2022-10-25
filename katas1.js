@@ -55,15 +55,10 @@ console.log(stringElement("algoritmo", 7))
 //exercicio4
 function stringSlicer(string, n) {
     for(let i = 0 ; i <= string.length ; i++) {
-         
-        if (n) {
-            
-            return string.slice(0, n).toUpperCase()
+        return string.slice(0, n).toUpperCase()
+    }  
+}           
 
-        }
-     }
-
-}
 console.log("exercicio 4")
 console.log(stringSlicer("almoxarifado", 4))
 
